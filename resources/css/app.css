@@ -2,3 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
+.text-overflow-adjust{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;        
+  -webkit-line-clamp: 7;
+  overflow: hidden;
+}
+
+::-moz-selection{
+  background: #F56700;
+  color: #000;
+}
+::selection{
+  background: #F56700;
+  color: #000;
+}
+
+@media (min-width: 1024px) {
+  .text-overflow-adjust {
+    -webkit-line-clamp: 3;
+  }
+}
+
+.text-size-laptop{
+  font-size: 1.25rem !important;
+}
+
+@media (min-width: 1450px){
+  .text-size-laptop{
+    font-size: 2.25rem !important;
+  }
+}
+
+@media (min-width: 430px){
+  .text-size-laptop{
+    font-size: 1.75rem !important;
+  }
+  .button-size{
+    font-size: 1rem !important;
+  }
+}
+
+.flex-laptop{
+  flex-direction: column;
+  width: auto;
+}
+
+@media (min-width: 1350px){
+  .flex-laptop{
+    flex-direction: row !important;
+    width: 100% !important;
+  }
+  .width-laptop{
+    width: 25% !important;
+  }
+  .button-size{
+    font-size: 1.5rem !important;
+  }
+}
+
+
+
+.width-laptop{
+  width: 80%;
+}
+
+.button-size{
+  font-size: 0.75rem;
+}

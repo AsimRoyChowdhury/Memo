@@ -3,7 +3,8 @@
 <head>
     @vite('resources/css/app.css')
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
     <link rel="stylesheet" href="{{ asset('css/master.css') }}">
     <title>Memo</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" >
@@ -34,25 +35,26 @@
 </head>
 <!-- <body class="bg-gradient-to-r from-gray-900  to-teal-900"> -->
 <body style="background:url('assets/bg2.svg'); background-size:cover; background-repeat:no-repeat">
-<header class="mt-2 sm:mx-10 ml-2">
-  <nav class=" flex items-center w-full  justify-between py-4">
+<header class="z-20 bg-gray-900 opacity-90 w-full px-6" style="position: fixed">
+  <nav class=" flex items-center  justify-between py-4">
     <div class="w-fit flex justify-center item-center">
-    <a href="#" class="lg:text-4xl text-lg font-bold text-orange-500 tracking-widest" style="font-family: 'Montserrat'">MEMO</a>
-    <div class=" w-0.5 mx-5 bg-gray-500 hidden sm:block">
+      <svg class="sm:w-10 sm:h-10 w-4 h-4 sm:mt-0 mt-1 mr-2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="translate(1 1)"> <polygon style="fill:#f58f00;" points="51.966,466.862 449.207,466.862 449.207,43.138 51.966,43.138 "></polygon> <polygon style="fill:#f58f00FFFFFF;" points="25.483,466.862 51.966,466.862 51.966,43.138 25.483,43.138 "></polygon> <polygon style="fill:#f58f00FD9808;" points="449.207,78.448 449.207,466.862 60.793,466.862 60.793,502.172 484.517,502.172 484.517,78.448 "></polygon> <polygon style="fill:#f58f00FCC309;" points="60.793,502.172 458.034,502.172 458.034,466.862 60.793,466.862 "></polygon> <path d="M449.207,475.69H25.483c-5.297,0-8.828-3.531-8.828-8.828V43.138c0-5.297,3.531-8.828,8.828-8.828h423.724 c5.297,0,8.828,3.531,8.828,8.828v423.724C458.034,472.159,454.503,475.69,449.207,475.69z M34.31,458.034h406.069V51.966H34.31 V458.034z"></path> <path d="M484.517,511H60.793c-5.297,0-8.828-3.531-8.828-8.828v-35.31c0-5.297,3.531-8.828,8.828-8.828h379.586V78.448 c0-5.297,3.531-8.828,8.828-8.828h35.31c5.297,0,8.828,3.531,8.828,8.828v423.724C493.345,507.469,489.814,511,484.517,511z M69.621,493.345H475.69V87.276h-17.655v379.586c0,5.297-3.531,8.828-8.828,8.828H69.621V493.345z"></path> <path d="M219.69,122.586c-19.421,0-35.31-15.89-35.31-35.31V34.31c0-19.421,15.89-35.31,35.31-35.31S255,14.89,255,34.31 c0,5.297-3.531,8.828-8.828,8.828s-8.828-3.531-8.828-8.828c0-9.71-7.945-17.655-17.655-17.655c-9.71,0-17.655,7.945-17.655,17.655 v52.966c0,9.71,7.945,17.655,17.655,17.655c9.71,0,17.655-7.945,17.655-17.655c0-5.297,3.531-8.828,8.828-8.828 S255,81.979,255,87.276C255,106.697,239.11,122.586,219.69,122.586z"></path> <path d="M360.931,193.207h-35.31c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h35.31c5.297,0,8.828,3.531,8.828,8.828 S366.228,193.207,360.931,193.207z"></path> <path d="M290.31,193.207h-61.793c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h61.793 c5.297,0,8.828,3.531,8.828,8.828S295.607,193.207,290.31,193.207z"></path> <path d="M193.207,193.207h-79.448c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h79.448 c5.297,0,8.828,3.531,8.828,8.828S198.503,193.207,193.207,193.207z"></path> <path d="M360.931,246.172H290.31c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h70.621 c5.297,0,8.828,3.531,8.828,8.828S366.228,246.172,360.931,246.172z"></path> <path d="M237.345,246.172h-61.793c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h61.793 c5.297,0,8.828,3.531,8.828,8.828S242.641,246.172,237.345,246.172z"></path> <path d="M140.241,246.172h-26.483c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h26.483 c5.297,0,8.828,3.531,8.828,8.828S145.538,246.172,140.241,246.172z"></path> <path d="M360.931,299.138h-26.483c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h26.483 c5.297,0,8.828,3.531,8.828,8.828S366.228,299.138,360.931,299.138z"></path> <path d="M299.138,299.138h-88.276c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h88.276 c5.297,0,8.828,3.531,8.828,8.828S304.434,299.138,299.138,299.138z"></path> <path d="M157.897,299.138h-44.138c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h44.138 c5.297,0,8.828,3.531,8.828,8.828S163.193,299.138,157.897,299.138z"></path> <path d="M360.931,352.103h-97.103c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h97.103 c5.297,0,8.828,3.531,8.828,8.828S366.228,352.103,360.931,352.103z"></path> <path d="M210.862,352.103h-35.31c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h35.31c5.297,0,8.828,3.531,8.828,8.828 S216.159,352.103,210.862,352.103z"></path> <path d="M140.241,352.103h-26.483c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h26.483 c5.297,0,8.828,3.531,8.828,8.828S145.538,352.103,140.241,352.103z"></path> </g> </g></svg>
+      <a href="#" class="lg:text-4xl text-md font-bold text-orange-500 tracking-widest" style="font-family: 'Montserrat'">MEMO</a>
+      <div class=" w-0.5 mx-5 bg-gray-500 hidden sm:block">
       </div>
       <div style="font-family: 'Montserrat'" class="my-auto font-semibold uppercase tracking-widest hidden sm:block text-white">Notes  made  powerful</div>
     </div>
     <ul class="flex space-x-4">
-      <li><a href="#" style="font-family: 'Montserrat'" class="text-white my-auto font-semibold uppercase tracking-widest hover:text-gray-300">Login</a></li>
-      <li><a href="#" style="font-family: 'Montserrat'" class="my-auto font-semibold uppercase tracking-widest text-orange-500 hover:text-orange-300">Sign up</a></li>
+      <li><a href="#" style="font-family: 'Montserrat'" class="text-white my-auto font-semibold uppercase tracking-widest hover:text-gray-300 sm:text-xl text-sm">Login</a></li>
+      <li><a href="#" style="font-family: 'Montserrat'" class="my-auto font-semibold uppercase tracking-widest text-orange-500 hover:text-orange-300 sm:text-xl text-sm">Sign up</a></li>
     </ul>
   </nav>
 </header>
-<div class="flex justify-center">
-  <div class="relative flex lg:flex-row flex-col z-10 my-10 sm:py-16 py-5 lg:mx-15 xl:mx-32 mx-10 bg-gradient-to-r from-gray-400 to-gray-500 rounded-lg" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;" >
+<div class="flex justify-center pt-16">
+  <div class="relative flex lg:flex-row flex-col-reverse z-10 my-10 sm:py-16 py-5 lg:mx-15 xl:mx-32 mx-10 bg-gradient-to-r from-gray-400 to-gray-500 rounded-lg">
     <svg class="sm:w-36 w-20 mt-4 absolute inset-0 z-0 opacity-40" style=" left: max(-15vw, -80px)" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="4.5" cy="2.5" r=".6" fill="#000000"></circle> <circle cx="4.5" cy="4.5" r=".6" fill="#000000"></circle> <circle cx="4.5" cy="6.499" r=".6" fill="#000000"></circle> <circle cx="4.5" cy="8.499" r=".6" fill="#000000"></circle> <circle cx="4.5" cy="10.498" r=".6" fill="#000000"></circle> <circle cx="4.5" cy="12.498" r=".6" fill="#000000"></circle> <circle cx="6.5" cy="2.5" r=".6" fill="#000000"></circle> <circle cx="6.5" cy="4.5" r=".6" fill="#000000"></circle> <circle cx="6.5" cy="6.499" r=".6" fill="#000000"></circle> <circle cx="6.5" cy="8.499" r=".6" fill="#000000"></circle> <circle cx="6.5" cy="10.498" r=".6" fill="#000000"></circle> <circle cx="6.5" cy="12.498" r=".6" fill="#000000"></circle> <circle cx="8.499" cy="2.5" r=".6" fill="#000000"></circle> <circle cx="8.499" cy="4.5" r=".6" fill="#000000"></circle> <circle cx="8.499" cy="6.499" r=".6" fill="#000000"></circle> <circle cx="8.499" cy="8.499" r=".6" fill="#000000"></circle> <circle cx="8.499" cy="10.498" r=".6" fill="#000000"></circle> <circle cx="8.499" cy="12.498" r=".6" fill="#000000"></circle> <circle cx="10.499" cy="2.5" r=".6" fill="#000000"></circle> <circle cx="10.499" cy="4.5" r=".6" fill="#000000"></circle> <circle cx="10.499" cy="6.499" r=".6" fill="#000000"></circle> <circle cx="10.499" cy="8.499" r=".6" fill="#000000"></circle> <circle cx="10.499" cy="10.498" r=".6" fill="#000000"></circle> <circle cx="10.499" cy="12.498" r=".6" fill="#000000"></circle> </g></svg>
     <svg class="sm:w-36 w-20 lg:block absolute  bottom-0 z-0 opacity-40 " style="right: max(-15vw, -80px)" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="4.5" cy="2.5" r=".6" fill="#ff8a05"></circle> <circle cx="4.5" cy="4.5" r=".6" fill="#ff8a05"></circle> <circle cx="4.5" cy="6.499" r=".6" fill="#ff8a05"></circle> <circle cx="4.5" cy="8.499" r=".6" fill="#ff8a05"></circle> <circle cx="4.5" cy="10.498" r=".6" fill="#ff8a05"></circle> <circle cx="4.5" cy="12.498" r=".6" fill="#ff8a05"></circle> <circle cx="6.5" cy="2.5" r=".6" fill="#ff8a05"></circle> <circle cx="6.5" cy="4.5" r=".6" fill="#ff8a05"></circle> <circle cx="6.5" cy="6.499" r=".6" fill="#ff8a05"></circle> <circle cx="6.5" cy="8.499" r=".6" fill="#ff8a05"></circle> <circle cx="6.5" cy="10.498" r=".6" fill="#ff8a05"></circle> <circle cx="6.5" cy="12.498" r=".6" fill="#ff8a05"></circle> <circle cx="8.499" cy="2.5" r=".6" fill="#ff8a05"></circle> <circle cx="8.499" cy="4.5" r=".6" fill="#ff8a05"></circle> <circle cx="8.499" cy="6.499" r=".6" fill="#ff8a05"></circle> <circle cx="8.499" cy="8.499" r=".6" fill="#ff8a05"></circle> <circle cx="8.499" cy="10.498" r=".6" fill="#ff8a05"></circle> <circle cx="8.499" cy="12.498" r=".6" fill="#ff8a05"></circle> <circle cx="10.499" cy="2.5" r=".6" fill="#ff8a05"></circle> <circle cx="10.499" cy="4.5" r=".6" fill="#ff8a05"></circle> <circle cx="10.499" cy="6.499" r=".6" fill="#ff8a05"></circle> <circle cx="10.499" cy="8.499" r=".6" fill="#ff8a05"></circle> <circle cx="10.499" cy="10.498" r=".6" fill="#ff8a05"></circle> <circle cx="10.499" cy="12.498" r=".6" fill="#ff8a05"></circle> </g></svg>
-    <div class="flex flex-wrap flex-col md:ml-20 sm:ml-14 ml-10 mt-5">
+    <div class="flex flex-wrap flex-col md:ml-20 items-center justify-center sm:ml-14 ml-10 mt-5">
       <h1 class="md:text-6xl sm:text-4xl text-2xl font-bold " style="font-family: 'Montserrat'">
         Let's get your <div class="bg-orange-400 opacity-90 my-5 mr-14 px-2 w-44 sm:w-60 md:w-96" style="border-radius: 52% 49% 47% 50% / 53% 53% 48% 46% ">Productivity</div> Started
       </h1>
@@ -63,19 +65,19 @@
         <button class="rounded-lg lg:text-xl bg-orange-400 hover:bg-orange-500 shadow-xl text-white py-2 px-4">Note My Email</button>
       </div>
     </div>
-    <div class="flex justify-items-center w-full lg:w-2/3 mx-5 mt-10">
-      <img class="lg:w-full w-4/5 h-auto rounded-xl opacity-80" src="{{ asset('assets/homepage_productivity.svg') }}" alt="Image Description">
+    <div class="flex justify-items-center w-full lg:w-2/3 mx-5 ">
+      <img draggable="false" class="lg:w-full w-4/5 h-auto rounded-xl opacity-80" src="{{ asset('assets/homepage_productivity.svg') }}" alt="Image Description">
 
     </div>
   </div>
 </div>
 
 <div class="relative justify-center">
-<svg class=" mx-auto my-auto transform rotate-90 flex lg:block absolute inset-0 z-0 opacity-10" style="width: min(50vw, 800px)" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="4.5" cy="2.5" r=".6" fill="#000000"></circle> <circle cx="4.5" cy="4.5" r=".6" fill="#000000"></circle> <circle cx="4.5" cy="6.499" r=".6" fill="#000000"></circle> <circle cx="4.5" cy="8.499" r=".6" fill="#000000"></circle> <circle cx="4.5" cy="10.498" r=".6" fill="#000000"></circle> <circle cx="4.5" cy="12.498" r=".6" fill="#000000"></circle> <circle cx="6.5" cy="2.5" r=".6" fill="#000000"></circle> <circle cx="6.5" cy="4.5" r=".6" fill="#000000"></circle> <circle cx="6.5" cy="6.499" r=".6" fill="#000000"></circle> <circle cx="6.5" cy="8.499" r=".6" fill="#000000"></circle> <circle cx="6.5" cy="10.498" r=".6" fill="#000000"></circle> <circle cx="6.5" cy="12.498" r=".6" fill="#000000"></circle> <circle cx="8.499" cy="2.5" r=".6" fill="#000000"></circle> <circle cx="8.499" cy="4.5" r=".6" fill="#000000"></circle> <circle cx="8.499" cy="6.499" r=".6" fill="#000000"></circle> <circle cx="8.499" cy="8.499" r=".6" fill="#000000"></circle> <circle cx="8.499" cy="10.498" r=".6" fill="#000000"></circle> <circle cx="8.499" cy="12.498" r=".6" fill="#000000"></circle> <circle cx="10.499" cy="2.5" r=".6" fill="#000000"></circle> <circle cx="10.499" cy="4.5" r=".6" fill="#000000"></circle> <circle cx="10.499" cy="6.499" r=".6" fill="#000000"></circle> <circle cx="10.499" cy="8.499" r=".6" fill="#000000"></circle> <circle cx="10.499" cy="10.498" r=".6" fill="#000000"></circle> <circle cx="10.499" cy="12.498" r=".6" fill="#000000"></circle> </g></svg>
-<div class="flex flex-col z-10 my-14 py-16 lg:mx-15 xl:mx-32 mx-10 rounded-2xl bg-gradient-to-b from-orange-400 to-orange-500" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;" >
+<svg class=" mx-auto my-auto transform rotate-90 flex lg:block absolute inset-0 z-0 opacity-5" style="width: min(50vw, 800px)" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="4.5" cy="2.5" r=".6" fill="#000000"></circle> <circle cx="4.5" cy="4.5" r=".6" fill="#000000"></circle> <circle cx="4.5" cy="6.499" r=".6" fill="#000000"></circle> <circle cx="4.5" cy="8.499" r=".6" fill="#000000"></circle> <circle cx="4.5" cy="10.498" r=".6" fill="#000000"></circle> <circle cx="4.5" cy="12.498" r=".6" fill="#000000"></circle> <circle cx="6.5" cy="2.5" r=".6" fill="#000000"></circle> <circle cx="6.5" cy="4.5" r=".6" fill="#000000"></circle> <circle cx="6.5" cy="6.499" r=".6" fill="#000000"></circle> <circle cx="6.5" cy="8.499" r=".6" fill="#000000"></circle> <circle cx="6.5" cy="10.498" r=".6" fill="#000000"></circle> <circle cx="6.5" cy="12.498" r=".6" fill="#000000"></circle> <circle cx="8.499" cy="2.5" r=".6" fill="#000000"></circle> <circle cx="8.499" cy="4.5" r=".6" fill="#000000"></circle> <circle cx="8.499" cy="6.499" r=".6" fill="#000000"></circle> <circle cx="8.499" cy="8.499" r=".6" fill="#000000"></circle> <circle cx="8.499" cy="10.498" r=".6" fill="#000000"></circle> <circle cx="8.499" cy="12.498" r=".6" fill="#000000"></circle> <circle cx="10.499" cy="2.5" r=".6" fill="#000000"></circle> <circle cx="10.499" cy="4.5" r=".6" fill="#000000"></circle> <circle cx="10.499" cy="6.499" r=".6" fill="#000000"></circle> <circle cx="10.499" cy="8.499" r=".6" fill="#000000"></circle> <circle cx="10.499" cy="10.498" r=".6" fill="#000000"></circle> <circle cx="10.499" cy="12.498" r=".6" fill="#000000"></circle> </g></svg>
+<div class="flex flex-col z-10 my-14 py-2 lg:py-4 lg:mx-15 xl:mx-32 mx-10 rounded-2xl bg-gradient-to-b from-orange-400 to-orange-500" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;" >
   <div class="text-white text-xl font-normal mx-auto my-auto tracking-wider">Introducing</div>
   <div class="text-white mx-auto flex">
-    <h1 class="font-semibold tracking-widest" style="font-family: 'Montserrat'; font-size: min(15vw, 200px)">
+    <h1 class="font-semibold tracking-widest" style="font-family: 'Montserrat'; font-size: min(15vw, 150px)">
       MEMO
     </h1>
   </div>
@@ -84,9 +86,11 @@
   </div>
 </div>
 </div>
-<div class="flex justify-center items-center flex-wrap flex-col lg:flex-row lg:w-full">
-<div class="flex-col w-3/5 lg:w-1/4 z-10 justify-items-center mx-10 px-8 my-10 rounded-2xl bg-gradient-to-b from-green-300 to-green-500 hover:from-green-400 hover:to-green-800 hover:scale-105 duration-300 hover:transition-all ease-in-out group">
-  <div class="flex justify-items-center">
+
+
+<div class="flex justify-center items-center flex-wrap flex-laptop">
+<div class="flex-col width-laptop z-10 justify-items-center mx-10 px-8 my-10 rounded-2xl bg-gradient-to-b from-green-300 to-green-500 hover:from-green-400 hover:to-green-800 hover:scale-105 duration-300 hover:transition-all ease-in-out group">
+  <div class="flex items-center justify-center">
     <svg width="446" height="min(50vw,400px)" viewBox="0 0 446 373" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path class="group-hover:fill-white fill-orange-500 transition duration-300 ease-in-out" d="M214.132 372.647C331.974 372.647 427.504 369.312 427.504 365.198C427.504 361.084 331.974 357.749 214.132 357.749C96.2899 357.749 0.759995 361.084 0.759995 365.198C0.759995 369.312 96.2899 372.647 214.132 372.647Z"/>
     <path class="group-hover:fill-white fill-orange-500 transition duration-300 ease-in-out" d="M414.709 145.638C417.873 144.779 421.275 145.014 424.39 143.993C432.167 141.442 435.53 131.231 432.463 123.643C429.395 116.055 421.568 111.23 413.553 109.574C405.538 107.918 397.241 108.923 389.12 109.934L343.473 50.765C307.198 35.781 266.479 31.755 227.972 39.343C222.237 40.474 216.281 41.852 210.63 40.36C204.978 38.867 199.885 33.344 201.162 27.64C202.155 23.207 206.5 20.189 207.773 15.828C209.538 9.784 204.422 3.43299 198.382 1.65499C192.341 -0.122008 185.861 1.46499 179.858 3.36499C155.264 11.151 132.38 24.289 113.256 41.601C97.933 55.472 90.768 77.129 85.208 97.036C79.649 116.943 79.38 138.625 86.52 158.021C93.66 177.417 108.604 194.241 127.871 201.722C133.254 220.49 146.103 236.796 161.327 249.022C172.151 257.714 184.829 263.972 198.117 267.989C241.193 281.011 290.916 268.876 323.151 237.474C335.05 225.882 347.775 215.834 363.363 210.091C374.646 205.934 385.049 204.252 396.646 201.072C403.444 199.208 410.34 197.302 416.376 193.663C422.413 190.024 427.586 184.362 429.011 177.459C430.437 170.556 427.257 162.515 420.765 159.77C418.466 158.798 415.928 158.514 413.603 157.605C411.278 156.697 409.029 154.879 408.745 152.399C408.371 149.144 411.545 146.498 414.709 145.638Z"/>
@@ -246,16 +250,16 @@
     <path d="M43.654 39.751L47.454 43.55" stroke="#060305" stroke-width="0.8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   </div>
-  <h1 class="lg:text-4xl text-lg text-center font-semibold mx-auto pb-2 uppercase text-orange-500 group-hover:text-white" style="font-family: 'Montserrat'; text-shadow: 2px 2px #000000; font-size: min(5vw, 30px)">
+  <h1 class=" text-size-laptop text-center font-semibold mx-auto pb-2 uppercase text-orange-500 group-hover:text-white" style="font-family: 'Montserrat'; text-shadow: 2px 2px #000000;">
     Seamless Collaboration
   </h1>
   <div class=" text-center text-lg text-black group-hover:text-white font-bold" style="font-family: 'Carme'">
     <p class="tracking-tight ">Enhance team collaboration and productivity with task assignment and progress tracking</p>
-    <button type="button" class="text-white my-5 bg-orange-500 group-hover:bg-white group-hover:text-green-700 group-hover:font-bold font-medium rounded-full text-lg px-5 py-2.5 text-center mr-2 hover:scale-110 transition duration-150 ease-in-out">Know More</button>
+    <button type="button" class="text-white my-8 mb-10 bg-orange-500 group-hover:bg-white group-hover:text-green-700 group-hover:font-bold font-medium rounded-full text-lg px-5 py-2.5 text-center mr-2 hover:scale-110 transition duration-150 ease-in-out" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" >Know More</button>
   </div>
 </div>
-<div class="w-3/5 lg:w-1/4 z-10 items-center mx-10 my-10 px-8 rounded-2xl bg-gradient-to-b from-indigo-200 to-indigo-700 hover:from-indigo-400 hover:to-indigo-800 hover:scale-105 duration-300 hover:transition-all ease-in-out group">
-  <div class="flex justify-items-center">
+<div class="width-laptop z-10 items-center mx-10 my-10 px-8 rounded-2xl bg-gradient-to-b from-indigo-200 to-indigo-700 hover:from-indigo-400 hover:to-indigo-800 hover:scale-105 duration-300 hover:transition-all ease-in-out group">
+  <div class="flex items-center justify-center">
     <svg width="440" height="min(50vw,400px)" viewBox="0 0 440 381" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path class="group-hover:fill-white fill-orange-500 transition duration-300 ease-in-out" d="M264.448 188.522C237.109 186.548 210.239 183.102 182.851 184.186C171.656 184.629 160.401 183.545 149.496 180.972C144.71 179.843 139.756 178.291 136.363 174.731C132.97 171.172 131.819 165.033 135.112 161.38C138.802 157.285 146.636 157.361 148.26 152.093C149.374 148.479 146.299 144.661 142.689 143.536C139.078 142.411 135.185 143.218 131.482 143.986C127.779 144.755 121.45 144.02 117.689 144.414C100.37 146.232 82.8949 146.566 65.5199 145.411C53.4389 144.608 41.2299 143.041 30.0569 138.376C18.8839 133.711 8.73991 125.615 3.74291 114.587C-3.38209 98.863 1.60491 79.051 14.1169 67.157C26.6289 55.263 45.4369 51.124 62.3179 54.733C65.2249 55.354 68.1579 56.191 71.1189 55.918C74.0799 55.645 77.1499 53.937 77.9759 51.081C79.1179 47.135 75.3059 43.172 71.2549 42.495C67.2029 41.818 63.1579 43.392 59.3029 44.81C55.4479 46.228 51.2269 47.526 47.3019 46.316C43.6939 45.204 40.8709 41.878 40.3589 38.137C39.8479 34.396 41.6739 30.435 44.8519 28.395C48.1089 26.304 52.2309 26.28 56.1009 26.325C110.586 26.956 165.071 27.586 219.556 28.216C243.939 28.498 268.851 25.914 293.213 26.956C317.576 27.999 343.422 34.905 359.022 53.648C375.468 73.408 376.813 101.926 371.579 127.097C368.905 139.956 364.604 152.753 356.642 163.199C346.276 176.798 330.359 185.399 313.779 189.58C297.198 193.762 281.502 189.753 264.448 188.522Z"/>
     <path d="M297.035 265.681H324.639C328.551 265.681 331.723 268.852 331.723 272.764V287.705C331.723 291.617 328.551 294.789 324.639 294.789H324.511L320.084 302.651L315.657 294.789H297.035C293.123 294.789 289.951 291.617 289.951 287.705V272.764C289.952 268.852 293.123 265.681 297.035 265.681Z" fill="#FE5615"/>
@@ -357,16 +361,16 @@
     <path d="M89.3662 172.777C89.6752 170.693 91.3302 168.872 93.3752 168.366" stroke="white" stroke-width="0.8" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   </div>
-  <h1 class="lg:text-4xl text-lg text-center font-semibold mx-auto pb-2 uppercase text-orange-500 group-hover:text-white" style="font-family: 'Montserrat'; text-shadow: 2px 2px #000000">
-    Intuitive User Experience
+  <h1 class="text-size-laptop text-center font-semibold mx-auto pb-2 uppercase text-orange-500 group-hover:text-white" style="font-family: 'Montserrat'; text-shadow: 2px 2px #000000">
+    Intuitive UI Experience
   </h1>
   <div class=" text-center text-lg text-black group-hover:text-white font-bold" style="font-family: 'Carme'">
     <p class="tracking-tight "> Our website streamlines note creation and task management, saving time and reducing learning curves.</p>
-    <button type="button" class="text-white my-5 bg-orange-500 group-hover:bg-white group-hover:text-indigo-500 group-hover:font-bold font-medium rounded-full text-lg px-5 py-2.5 text-center mr-2 hover:scale-110 transition duration-150 ease-in-out">Know More</button>
+    <button type="button" class="text-white my-8 mb-10 bg-orange-500 group-hover:bg-white group-hover:text-indigo-500 group-hover:font-bold font-medium rounded-full text-lg px-5 py-2.5 text-center mr-2 hover:scale-110 transition duration-150 ease-in-out" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">Know More</button>
   </div>
 </div>
-<div class="w-3/5 lg:w-1/4 z-10 items-center mx-10 my-10 px-8 rounded-2xl bg-gradient-to-b from-purple-300 to-purple-500 hover:from-purple-400 hover:to-purple-800 hover:scale-105 duration-300 hover:transition-all ease-in-out group">
-  <div class="flex justify-items-center">
+<div class="width-laptop z-10 items-center mx-10 my-10 px-8 rounded-2xl bg-gradient-to-b from-purple-300 to-purple-500 hover:from-purple-400 hover:to-purple-800 hover:scale-105 duration-300 hover:transition-all ease-in-out group">
+  <div class="flex items-center justify-center">
     <svg width="500" height="min(50vw,400px)" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g clip-path="url(#clip0_17_476)">
     <path class="group-hover:fill-white fill-orange-500 transition duration-300 ease-in-out" d="M457.705 443.75C457.705 451.383 368.315 451.383 258.048 451.383C147.781 451.383 58.3911 451.383 58.3911 443.75C58.3911 436.117 147.781 436.117 258.048 436.117C368.315 436.117 457.705 436.118 457.705 443.75Z"/>
@@ -539,12 +543,12 @@
     </defs>
     </svg>
   </div>
-  <h1 class="lg:text-4xl text-lg text-center font-semibold mx-auto pb-2 uppercase text-orange-500 group-hover:text-white" style="font-family: 'Montserrat'; text-shadow: 2px 2px #000000">
+  <h1 class="text-size-laptop text-center font-semibold mx-auto pb-2 uppercase text-orange-500 group-hover:text-white" style="font-family: 'Montserrat'; text-shadow: 2px 2px #000000">
     Enhanced Productivity
   </h1>
   <div class=" text-center text-lg text-black group-hover:text-white font-bold" style="font-family: 'Carme'">
     <p class="tracking-tight ">Set reminders, deadlines, and personalized to-do lists to maximize productivity and achieve your goals effortlessly.</p>
-    <button type="button" class="text-white my-5 bg-orange-500 group-hover:bg-white group-hover:text-purple-500 group-hover:font-bold font-medium rounded-full text-lg px-5 py-2.5 text-center mr-2 hover:scale-110 transition duration-150 ease-in-out">Know More</button>
+    <button type="button" class="text-white my-8 mb-10 bg-orange-500 group-hover:bg-white group-hover:text-purple-500 group-hover:font-bold font-medium rounded-full text-lg px-5 py-2.5 text-center mr-2 hover:scale-110 transition duration-150 ease-in-out" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">Know More</button>
   </div>
 </div>
 </div>
@@ -552,8 +556,8 @@
 <div class="swiper mySwiper w-full">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
-      <div class="flex">
-        <div class="w-4/5 p-6 m-4 relative justify-items-center">
+      <div class="flex pl-10 sm:p-0">
+        <div class="w-4/5 pt-6 m-4 relative justify-items-center">
           <div class="absolute top-[-5px] right-1/2 translate-x-1/2 w-24 h-24">
             <img src="{{ asset('assets/portrait_girl.jpg') }}" alt="User 1" class="border-orange-500 border-solid  border-t-4 border-l-4 border-r-4 rounded-full">
             <div class="flex items-center justify-center">
@@ -564,12 +568,11 @@
                 <svg aria-hidden="true" class="w-5 h-5 text-gray-300 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
             </div>
           </div>
-          <div class="bg-gray-300 justify-items-center pt-10 px-5 pb-5 mt-10 bg-opacity-90 border-4 border-orange-500" style="border-radius: 30% 30% 50% 50% / 50% 50% 50% 50%; margin-bottom: 20px;">
-            <p class="text-green-600 uppercase font-bold" style="font-family: 'Montserrat'">Sarah Johnson</p>
-            <p class="text-gray-800">"Amazing task management tool! It has completely transformed how I organize my work. Highly recommended!"</p>
+          <div class="bg-gray-300 justify-items-center pt-10 sm:px-5 pb-5 mt-10 bg-opacity-90 border-4 border-orange-500 rounded-3xl" style="margin-bottom: 20px;">
+            <p class="text-gray-800 text-overflow-adjust"><span class="text-green-600 uppercase font-bold" style="font-family: 'Montserrat'">Sarah Johnson</span><br>"Amazing task management tool! It has completely transformed how I organize my work. Highly recommended!"</p>
           </div>
         </div>
-        <div class="w-4/5 p-6 m-4 relative justify-items-center">
+        <div class="w-4/5 pt-6 m-4 relative justify-items-center">
           <div class="absolute top-[-5px] right-1/2 translate-x-1/2 w-24 h-24">
             <img src="{{ asset('assets/portrait_boy.jpg') }}" alt="User 1" class="border-orange-500 border-solid  border-t-4 border-l-4 border-r-4 rounded-full">
             <div class="flex items-center justify-center">
@@ -580,16 +583,15 @@
                 <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
             </div>
           </div>
-          <div class="bg-gray-300 justify-items-center pt-10 px-5 pb-5 mt-10 bg-opacity-90 border-4 border-orange-500" style="border-radius: 30% 30% 50% 50% / 50% 50% 50% 50%; margin-bottom: 20px;">
-            <p class="text-green-600 uppercase font-bold" style="font-family: 'Montserrat'">Mark Thompson</p>
-            <p class="text-gray-800">"Finally found a task management platform that meets all my needs. It's intuitive, efficient, and keeps me on top of my tasks. Thanks!"</p>
+          <div class="bg-gray-300 justify-items-center pt-10 sm:px-5 pb-5 mt-10 bg-opacity-90 border-4 border-orange-500 rounded-3xl" style="margin-bottom: 20px;">
+            <p class="text-gray-800 text-overflow-adjust"><span class="text-green-600 uppercase font-bold" style="font-family: 'Montserrat'">Mark Thompson</span><br>Finally found a task management platform that meets all my needs. It's intuitive, efficient, and keeps me on top of my tasks. Thanks!"</p>
           </div>
         </div>
       </div>
     </div>
     <div class="swiper-slide">
-    <div class="flex">
-        <div class="w-4/5 p-6 m-4 relative justify-items-center">
+      <div class="flex">
+        <div class="w-4/5 pt-6 m-4 relative justify-items-center">
           <div class="absolute top-[-5px] right-1/2 translate-x-1/2 w-24 h-24">
             <img src="{{ asset('assets/portrait_girl2.jpg') }}" alt="User 1" class="border-orange-500 border-solid  border-t-4 border-l-4 border-r-4 rounded-full">
             <div class="flex items-center justify-center">
@@ -600,12 +602,11 @@
                 <svg aria-hidden="true" class="w-5 h-5 text-gray-300 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
             </div>
           </div>
-          <div class="bg-gray-300 justify-items-center pt-10 px-5 pb-5 mt-10 bg-opacity-90 border-4 border-orange-500" style="border-radius: 30% 30% 50% 50% / 50% 50% 50% 50%; margin-bottom: 20px;">
-            <p class="text-green-600 uppercase font-bold" style="font-family: 'Montserrat'">Emily Adams</p>
-            <p class="text-gray-800">"I love the collaborative features of this tool. It has improved communication and productivity within our team. Thumbs up!"</p>
+          <div class="bg-gray-300 justify-items-center pt-10 sm:px-5 pb-5 mt-10 bg-opacity-90 border-4 rounded-3xl border-orange-500" style="margin-bottom: 20px;">
+            <p class="text-gray-800 text-overflow-adjust"><span class="text-green-600 uppercase font-bold" style="font-family: 'Montserrat'">Emily Adams</span><br>"I love the collaborative features of this tool. It has improved communication and productivity within our team. Thumbs up!"</p>
           </div>
         </div>
-        <div class="w-4/5 p-6 m-4 relative justify-items-center">
+        <div class="w-4/5 pt-6 m-4 relative justify-items-center">
           <div class="absolute top-[-5px] right-1/2 translate-x-1/2 w-24 h-24">
             <img src="{{ asset('assets/portrait_girl3.jpg') }}" alt="User 1" class="border-orange-500 border-solid  border-t-4 border-l-4 border-r-4 rounded-full">
             <div class="flex items-center justify-center">
@@ -616,16 +617,15 @@
                 <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
             </div>
           </div>
-          <div class="bg-gray-300 justify-items-center pt-10 px-5 pb-5 mt-10 bg-opacity-90 border-4 border-orange-500" style="border-radius: 30% 30% 50% 50% / 50% 50% 50% 50%; margin-bottom: 20px;">
-            <p class="text-green-600 uppercase font-bold" style="font-family: 'Montserrat'">Jennifer Roberts</p>
-            <p class="text-gray-800">"This task management tool has become an essential part of my workflow. It's user-friendly and helps me stay organized and focused. A game-changer!"</p>
+          <div class="bg-gray-300 justify-items-center pt-10 sm:px-5 pb-5 mt-10 bg-opacity-90 border-4 rounded-3xl border-orange-500" style="margin-bottom: 20px;">
+            <p class="text-gray-800 text-overflow-adjust"><span class="text-green-600 uppercase font-bold" style="font-family: 'Montserrat'">Jennifer Roberts</span><br>"This task management tool has become an essential part of my workflow. It's user-friendly and helps me stay organized and focused!"</p>
           </div>
         </div>
       </div>
     </div>
     <div class="swiper-slide">
-    <div class="flex">
-        <div class="w-4/5 p-6 m-4 relative justify-items-center">
+      <div class="flex">
+        <div class="w-4/5 pt-6 m-4 relative justify-items-center">
           <div class="absolute top-[-5px] right-1/2 translate-x-1/2 w-24 h-24">
             <img src="{{ asset('assets/portrait_boy2.jpg') }}" alt="User 1" class="border-orange-500 border-solid  border-t-4 border-l-4 border-r-4 rounded-full">
             <div class="flex items-center justify-center">
@@ -636,12 +636,11 @@
                 <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
             </div>
           </div>
-          <div class="bg-gray-300 justify-items-center pt-10 px-5 pb-5 mt-10 bg-opacity-90 border-4 border-orange-500" style="border-radius: 30% 30% 50% 50% / 50% 50% 50% 50%; margin-bottom: 20px;">
-            <p class="text-green-600 uppercase font-bold" style="font-family: 'Montserrat'">David Lee</p>
-            <p class="text-gray-800">"I've tried several task management tools, but this one stands out. The customizable dashboards and reporting features are fantastic. Impressed!"</p>
+          <div class="bg-gray-300 justify-items-center pt-10 sm:px-5 pb-5   mt-10 bg-opacity-90 border-4 border-orange-500 rounded-3xl" style="margin-bottom: 20px;">
+            <p class="text-gray-800 text-overflow-adjust"><span class="text-green-600 uppercase font-bold" style="font-family: 'Montserrat'">David Lee</span><br>"I've tried several task management tools, but this one stands out. The customizable dashboards and reporting features are fantastic. Impressed!"</p>
           </div>
         </div>
-        <div class="w-4/5 p-6 m-4 relative justify-items-center">
+        <div class="w-4/5 pt-6 m-4 relative justify-items-center">
           <div class="absolute top-[-5px] right-1/2 translate-x-1/2 w-24 h-24">
             <img src="{{ asset('assets/portrait_boy3.jpg') }}" alt="User 1" class="border-orange-500 border-solid  border-t-4 border-l-4 border-r-4 rounded-full">
             <div class="flex items-center justify-center">
@@ -652,17 +651,63 @@
                 <svg aria-hidden="true" class="w-5 h-5 text-gray-300 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Fifth star</title><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
             </div>
           </div>
-          <div class="bg-gray-300 justify-items-center pt-10 px-5 pb-5 mt-10 bg-opacity-90 border-4 border-orange-500" style="border-radius: 30% 30% 50% 50% / 50% 50% 50% 50%; margin-bottom: 20px;">
-            <p class="text-green-600 uppercase font-bold" style="font-family: 'Montserrat'">Michael Harris</p>
-            <p class="text-gray-800">"Using this platform has significantly improved our project management. It's streamlined, user-friendly, and offers great integration options. Well done!"</p>
+          <div class="bg-gray-300 justify-items-center pt-10 sm:px-5 pb-5 mt-10 bg-opacity-90 border-4 border-orange-500 rounded-3xl" style="margin-bottom: 20px;">
+            <p class="text-gray-800 text-overflow-adjust"><span class="text-green-600 uppercase font-bold" style="font-family: 'Montserrat'">Michael Harris</span><br>"Using this platform has significantly improved our project management. It's streamlined, user-friendly, and offers great integration options. Well done!"</p>
           </div>
         </div>
       </div>
     </div>
     </div>
 </div>
+
+
+<div>
+<div class="flex flex-col relative z-10 my-14 py-2 xl:py-4 pb-8 xl:pb-14 lg:mx-15 xl:mx-32 mx-10 rounded-2xl bg-gradient-to-b from-orange-400 to-orange-500">
+  <div class="text-white mx-auto flex text-center">
+    <h1 class="font-semibold uppercase" style="font-family: 'Montserrat'; font-size: min(5vw, 80px)">
+      Get Started for free
+    </h1>
+  </div>
+  <div class="mx-5 text-center text-white  font-medium font-sans">
+  <p>Memo is a free and open-source task management platform. We would love to see your contribution on our Github repository.</p>
+  </div>
+  <div>
+  <button type="button" class="absolute bottom-[-15px] shadow-orange-500 shadow-sm right-1/2 translate-x-1/2 bg-white button-size font-medium rounded-full px-5 py-2 text-center mr-2 hover:scale-110 transition duration-150 ease-in-out" >Sign In</button>
+  </div>
+</div>
+</div>
+
+
+<footer class="bg-gray-950 bg-opacity-90">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <a href="https://flowbite.com/" class="flex items-center">
+                <svg class="w-8 h-8 mr-2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g transform="translate(1 1)"> <polygon style="fill:#f58f00;" points="51.966,466.862 449.207,466.862 449.207,43.138 51.966,43.138 "></polygon> <polygon style="fill:#f58f00FFFFFF;" points="25.483,466.862 51.966,466.862 51.966,43.138 25.483,43.138 "></polygon> <polygon style="fill:#f58f00FD9808;" points="449.207,78.448 449.207,466.862 60.793,466.862 60.793,502.172 484.517,502.172 484.517,78.448 "></polygon> <polygon style="fill:#f58f00FCC309;" points="60.793,502.172 458.034,502.172 458.034,466.862 60.793,466.862 "></polygon> <path d="M449.207,475.69H25.483c-5.297,0-8.828-3.531-8.828-8.828V43.138c0-5.297,3.531-8.828,8.828-8.828h423.724 c5.297,0,8.828,3.531,8.828,8.828v423.724C458.034,472.159,454.503,475.69,449.207,475.69z M34.31,458.034h406.069V51.966H34.31 V458.034z"></path> <path d="M484.517,511H60.793c-5.297,0-8.828-3.531-8.828-8.828v-35.31c0-5.297,3.531-8.828,8.828-8.828h379.586V78.448 c0-5.297,3.531-8.828,8.828-8.828h35.31c5.297,0,8.828,3.531,8.828,8.828v423.724C493.345,507.469,489.814,511,484.517,511z M69.621,493.345H475.69V87.276h-17.655v379.586c0,5.297-3.531,8.828-8.828,8.828H69.621V493.345z"></path> <path d="M219.69,122.586c-19.421,0-35.31-15.89-35.31-35.31V34.31c0-19.421,15.89-35.31,35.31-35.31S255,14.89,255,34.31 c0,5.297-3.531,8.828-8.828,8.828s-8.828-3.531-8.828-8.828c0-9.71-7.945-17.655-17.655-17.655c-9.71,0-17.655,7.945-17.655,17.655 v52.966c0,9.71,7.945,17.655,17.655,17.655c9.71,0,17.655-7.945,17.655-17.655c0-5.297,3.531-8.828,8.828-8.828 S255,81.979,255,87.276C255,106.697,239.11,122.586,219.69,122.586z"></path> <path d="M360.931,193.207h-35.31c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h35.31c5.297,0,8.828,3.531,8.828,8.828 S366.228,193.207,360.931,193.207z"></path> <path d="M290.31,193.207h-61.793c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h61.793 c5.297,0,8.828,3.531,8.828,8.828S295.607,193.207,290.31,193.207z"></path> <path d="M193.207,193.207h-79.448c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h79.448 c5.297,0,8.828,3.531,8.828,8.828S198.503,193.207,193.207,193.207z"></path> <path d="M360.931,246.172H290.31c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h70.621 c5.297,0,8.828,3.531,8.828,8.828S366.228,246.172,360.931,246.172z"></path> <path d="M237.345,246.172h-61.793c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h61.793 c5.297,0,8.828,3.531,8.828,8.828S242.641,246.172,237.345,246.172z"></path> <path d="M140.241,246.172h-26.483c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h26.483 c5.297,0,8.828,3.531,8.828,8.828S145.538,246.172,140.241,246.172z"></path> <path d="M360.931,299.138h-26.483c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h26.483 c5.297,0,8.828,3.531,8.828,8.828S366.228,299.138,360.931,299.138z"></path> <path d="M299.138,299.138h-88.276c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h88.276 c5.297,0,8.828,3.531,8.828,8.828S304.434,299.138,299.138,299.138z"></path> <path d="M157.897,299.138h-44.138c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h44.138 c5.297,0,8.828,3.531,8.828,8.828S163.193,299.138,157.897,299.138z"></path> <path d="M360.931,352.103h-97.103c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h97.103 c5.297,0,8.828,3.531,8.828,8.828S366.228,352.103,360.931,352.103z"></path> <path d="M210.862,352.103h-35.31c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h35.31c5.297,0,8.828,3.531,8.828,8.828 S216.159,352.103,210.862,352.103z"></path> <path d="M140.241,352.103h-26.483c-5.297,0-8.828-3.531-8.828-8.828s3.531-8.828,8.828-8.828h26.483 c5.297,0,8.828,3.531,8.828,8.828S145.538,352.103,140.241,352.103z"></path> </g> </g></svg>
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap uppercase text-white" style="font-family: 'Montserrat'">Memo</span>
+              </a>
+          </div>
+          <h2 class="mb-6 text-sm font-medium text-white" style="font-family: 'Carme'">Memo is free and open-source. Your contrivution can make memo a very useful tool</h2>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <span style="font-family: 'Montserrat'">MEMO™</span> All Rights Reserved.
+          </span>
+          <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+              <a href="https://bmc.link/asimrc" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                  <img class="w-36 hover:scale-110 transition-all duration-300" src="{{ asset('assets/buy_me_a_coffee_button.png') }}">
+              </a>
+              <a href="https://github.com/AsimRoyChowdhury" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                  <svg class="w-10 h-10 hover:scale-125 transition-all duration-300" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                  <span class="sr-only">GitHub account</span>
+              </a>
+          </div>
+      </div>
+    </div>
+</footer>
+
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
 <script>
   var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
